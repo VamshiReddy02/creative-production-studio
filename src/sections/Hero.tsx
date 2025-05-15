@@ -1,3 +1,5 @@
+import Navbar from "./Navbar";
+
 const Hero = () => {
   return (
     <section className="relative min-h-screen bg-[#c3c3c3] overflow-hidden">
@@ -13,6 +15,7 @@ const Hero = () => {
           WebkitMaskImage: "linear-gradient(to top, black 60%, transparent 100%)",
         }}
       />
+      <Navbar />
 
       <div className="pt-40 text-center text-black text-4xl relative z-10">
         WE CREATE

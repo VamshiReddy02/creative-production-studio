@@ -8,11 +8,6 @@ const config: Config = {
     theme: {
         container: {
             center: true,
-            padding: {
-                DEFAULT: "1rem",
-                md: "1.5rem",
-                lg: "1.5rem",
-            },
         },
         extend: {
             fontFamily: {
