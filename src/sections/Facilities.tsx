@@ -1,3 +1,25 @@
+import videoStudio from '../assets/video-studio.jpeg'
+import imageStudio from '../assets/image-studio.jpeg'
+import audioStudio from '../assets/music-studio.jpeg'
+import FacilitieCard from '../components/FacilitieCard'
+
+const content = [
+  {
+    image: videoStudio,
+    title: "Video Studio",
+    description: "Our multi-functional studio features unique spaces and decorations suited for any project, from music video and fashion shoots to corporate videos and interviews."
+  },
+  {
+    image: imageStudio,
+    title: "Photo Studio",
+    description: "Our photo studio features a diverse range of versatile spaces and designed sets, making it ideal for fashion and product photography, corporate shoots, creative projects and more."
+  },
+  {
+    image: audioStudio,
+    title: "Audio Studio",
+    description: "Dolby Atmos-certified facility, offers recording and rehearsal spaces alongside tailored services for all audio needs. From recording and music production to songwriting camps"
+  },
+]
 
 const Facilities = () => {
   return (
@@ -15,7 +37,15 @@ const Facilities = () => {
               </p>
             </div>
         </div>
-        
+      <div className='flex mt-10 justify-between min-h-screen'>
+        {content.map((c) => (
+            <FacilitieCard 
+              image={c.image}
+              title={c.title}
+              description={c.description}
+             />
+        ))}
+      </div>
       </div>
     </section>
   )
