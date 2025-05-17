@@ -15,6 +15,7 @@ const Facilities = () => {
               </p>
             </div>
         </div>
+        
       </div>
     </section>
   )
