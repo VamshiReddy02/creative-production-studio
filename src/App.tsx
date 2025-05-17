@@ -1,4 +1,4 @@
-import Hero from "./sections/Hero"
+import Colloboration from "./sections/Colloboration"
 import Navbar from "./sections/Navbar"
 import Services from "./sections/Services"
 
@@ -8,6 +8,7 @@ function App() {
     <>
       <Navbar />
       <Services />
+      <Colloboration />
     </>
   )
 }

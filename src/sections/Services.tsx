@@ -3,7 +3,7 @@ import videoProduction from '../assets/video-production.jpeg'
 const Services = () => {
   return (
     <section className="py-6 overflow-hidden">
-      <div className="w-full px-4 md:px-6 lg:px-5">
+      <div className="w-full px-4 md:px-5 lg:px-5">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-15">
           {/* Info section */}
           <div>
