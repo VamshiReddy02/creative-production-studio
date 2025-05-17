@@ -3,7 +3,7 @@ import logoImg from '../assets/logo.png'
 const Navbar = () => {
   return (
     <section className="py-6">
-      <div className="w-full px-4 sm:px-6 lg:px-7">
+      <div className="w-full px-4 sm:px-6 lg:px-5">
         <div className='flex justify-between items-center'>
             <img src={logoImg} alt="logo" className='h-9 md:h-[6rem] w-auto' />
             <button className='w-32 bg-black text-white border border-black h-13 rounded-full px-6 uppercase 

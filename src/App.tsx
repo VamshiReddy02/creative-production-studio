@@ -1,10 +1,13 @@
 import Hero from "./sections/Hero"
+import Navbar from "./sections/Navbar"
+import Services from "./sections/Services"
 
 
 function App() {
   return (
     <>
-      <Hero />
+      <Navbar />
+      <Services />
     </>
   )
 }
