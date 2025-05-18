@@ -37,7 +37,7 @@ const Facilities = () => {
               </p>
             </div>
         </div>
-      <div className='flex mt-10 justify-between min-h-screen'>
+      <div className='flex mt-10 justify-between min-h-[500px]'>
         {content.map((c) => (
             <FacilitieCard 
               image={c.image}
