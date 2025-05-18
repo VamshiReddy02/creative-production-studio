@@ -1,4 +1,36 @@
+import { image } from 'framer-motion/client'
 import videoProduction from '../assets/video-production.jpeg'
+import musicProduction from '../assets/Music-Production.jpeg'
+import threeAnimation from '../assets/33d.jpeg'
+import graphicD from '../assets/Graphic-Design.jpeg'
+
+const cardContent = [
+  {
+    image: videoProduction,
+    title: "Video Production",
+    description: "Our video production team creates unique content tailored to your needs, style, and budget. From music videos to corporate shoots, we deliver high-quality visuals on tight deadlines."
+  },
+  {
+    image: musicProduction,
+    title: "Music Production",
+    description: "Our video production team creates unique content tailored to your needs, style, and budget. From music videos to corporate shoots, we deliver high-quality visuals on tight deadlines."
+  },
+  {
+    image: threeAnimation,
+    title: "3D Production",
+    description: "Our video production team creates unique content tailored to your needs, style, and budget. From music videos to corporate shoots, we deliver high-quality visuals on tight deadlines."
+  },
+  {
+    image: graphicD,
+    title: "Graphic Design",
+    description: "Our video production team creates unique content tailored to your needs, style, and budget. From music videos to corporate shoots, we deliver high-quality visuals on tight deadlines."
+  },
+  {
+    image: videoProduction,
+    title: "Music Marketing",
+    description: "Our video production team creates unique content tailored to your needs, style, and budget. From music videos to corporate shoots, we deliver high-quality visuals on tight deadlines."
+  },
+]
 
 const Services = () => {
   return (
