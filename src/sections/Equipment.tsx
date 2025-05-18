@@ -41,8 +41,6 @@ const Equipment = () => {
                 <EquipCard key={index} image={c.image} title={c.title} />
               ))}
             </div>
-            <div className="absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-black to-transparent pointer-events-none" />
-
         </div>
       </div>
     </section>
