@@ -1,3 +1,4 @@
+import logoImg from '../assets/logo.png'
 
 const footerLinks = [
   { href: "#", label: "Contact" },
@@ -11,7 +12,7 @@ const Footer = () => {
       <div className="mx-2 px-3 md:px-4 lg:px-4">
           <div className="flex flex-col md:flex-row items-center md:justify-between gap-6">
             <div>
-              <h1 className='text-4xl h-2 md:h-auto w-auto uppercase tracking-[1rem]'>VR STUDIO</h1>
+              <img src={logoImg} alt="logo" className='h-9 md:h-[10rem] w-auto' />
             </div>
             <div className="flex gap-6">
                 {footerLinks.map((link) => (

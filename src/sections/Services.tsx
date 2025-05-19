@@ -1,4 +1,3 @@
-import { image } from 'framer-motion/client'
 import videoProduction from '../assets/video-production.jpeg'
 import musicProduction from '../assets/Music-Production.jpeg'
 import threeAnimation from '../assets/33d.jpeg'
