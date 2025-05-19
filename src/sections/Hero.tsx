@@ -15,29 +15,29 @@ const Hero = () => {
 
   const { scrollYProgress } = useScroll({
     target: scrollTarget,
-    offset: ['start end', 'end end']
+    offset: ['start start', 'end start']
   })
 
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 2.5]);
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 2.8]);
   const borderRadius = useTransform(scrollYProgress, [0, 1], ['2rem', '0rem']);
   const y = useTransform(scrollYProgress, [0, 1], ['0vh', '-6vh']);
-  const revealStart =  0.86;
+  const revealStart = 0.95;
+
   const topSplitY = useTransform(scrollYProgress, [revealStart, 1], ['0%', '-100%']);
   const bottomSplitY = useTransform(scrollYProgress, [revealStart, 1], ['0%', '100%']);
 
-  const navbarOpacity = useTransform(scrollYProgress, [revealStart, revealStart + 0.01], [1, 0]);
-  const bottomOpacity = useTransform(scrollYProgress, [revealStart, revealStart + 0.01], [1, 0]);
-
-
-
-  const headingY = useTransform(scrollYProgress, [0, 0.6], ['20vh', '-150vh']);
-  const headingOpacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
-
+  const navbarOpacity = useTransform(scrollYProgress, [revealStart, 1], [1, 0]);
+  const bottomOpacity = useTransform(scrollYProgress, [revealStart, 1], [1, 0]);
   const floorOpacity = useTransform(scrollYProgress, [revealStart, 1], [1, 0]);
+
+
+
+  const headingY = useTransform(scrollYProgress, [0, 0.6], ['1vh', '-150vh']);
+  const headingOpacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
   return (
     <section className="relative min-h-screen bg-[#c3c3c3]">
-      <div className="sticky top-0 overflow-x-clip">
+      <div className="sticky top-0 z-40 overflow-x-clip">
         <motion.img
           src="/img/floor.webp"
           alt="floor"
@@ -58,10 +58,10 @@ const Hero = () => {
         <div className="relative bottom-10 z-10 flex flex-col items-center justify-center">
           <div className="flex flex-col justify-center items-center">
             <motion.h1 style={{ y: headingY, opacity: headingOpacity }}
-              className="uppercase font-bold absolute z-15 text-white font-travels-medium text-2xl md:text-4xl lg:text-6xl xl:text-[10rem] transform">
+              className="uppercase font-bold absolute z-60 text-white font-travels-medium text-2xl md:text-4xl lg:text-6xl xl:text-[10rem] transform">
                 We create
             </motion.h1>
-          <motion.div style={{ scale, borderRadius, y }} className="relative h-[40vh] w-[45vw] overflow-hidden top-35">
+          <motion.div style={{ scale, borderRadius, y }} className="relative z-50 h-[40vh] w-[45vw] overflow-hidden top-35">
                 {/*Split Top Half*/}
               <motion.div
                 style={{ y: topSplitY }}
