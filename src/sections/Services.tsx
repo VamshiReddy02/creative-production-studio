@@ -14,22 +14,22 @@ const cardContent = [
   {
     image: musicProduction,
     title: "Music Production",
-    description: "2Our video production team creates unique content tailored to your needs, style, and budget. From music videos to corporate shoots, we deliver high-quality visuals on tight deadlines."
+    description: "From music production and sound design to composing for films and corporate videos, we deliver top-quality sound for any project. With our Dolby Atmos-certified studio and in-house experts, we ensure a seamless creative process."
   },
   {
     image: threeAnimation,
     title: "3D Production",
-    description: "3Our video production team creates unique content tailored to your needs, style, and budget. From music videos to corporate shoots, we deliver high-quality visuals on tight deadlines."
+    description: "Our team of 3D and CGI artists brings innovative ideas to life, tailored to your needs. Whether you’re working on an artistic project or a corporate production, we offer expertise in chroma keying, motion graphics, 3D modeling, and more, delivering outstanding visuals for any purpose."
   },
   {
     image: graphicD,
     title: "Graphic Design",
-    description: "4Our video production team creates unique content tailored to your needs, style, and budget. From music videos to corporate shoots, we deliver high-quality visuals on tight deadlines."
+    description: "VR Studios provides fresh and creative graphic design solutions. From infographics, presentations, and logos to album cover art and social media graphics, our team creates the best visuals for your needs."
   },
   {
     image: videoProduction,
     title: "Music Marketing",
-    description: "5Our video production team creates unique content tailored to your needs, style, and budget. From music videos to corporate shoots, we deliver high-quality visuals on tight deadlines."
+    description: "Our portfolio includes No.1 radio hits and award-winning songs from around the globe. We offer tailored campaigns and promotional strategies to ensure your music is heard."
   },
 ]
 
