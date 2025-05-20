@@ -42,7 +42,7 @@ const Colloboration = () => {
         <div className="relative overflow-hidden bg-black h-[9rem] rounded-4xl mt-24">
           <motion.div
             className="flex gap-24 items-center absolute left-0 top-1/2 -translate-y-1/2"
-            animate={{ x: ["-100%", "100%"] }}
+            animate={{ x: ["0%", "-50%"] }}
             transition={{
               duration: 20,
               ease: "linear",
